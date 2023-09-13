@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div class="slideshowContainer" id="container">
+        <img class="images" src="./img/1.jpg" />
+        <img class="images" src="./img/2.jpg" />
+        <img class="images" src="./img/3.jpg" />
+        <img class="images" src="./img/4.jpg" />
+        <img class="images" src="./img/9.jpg" />
+        <img class="images" src="./img/6.jpg" />
+        <img class="images" src="./img/7.jpg" />
+
+        <div class="button">
+          <button class="x" id="prev" onclick="goToPreviousSlide()">  <  </button>
+          <button class="x" id="next" onclick="goToNextSlide()">  >  </button>
+        </div>
+      </div>
+      <div class="circle" id="dot">
+        <div id="0" class="ek" onclick="currentSlide(0,'one')"></div>
+        <div id="1" class="ek" onclick="currentSlide(1 , 'two')"></div>
+        <div id="2" class="ek" onclick="currentSlide(2 , 'three')"></div>
+        <div id="3" class="ek" onclick="currentSlide(3 , 'four')"></div>
+        <div id="4" class="ek" onclick="currentSlide(4 ,'five')"></div>
+        <div id="5" class="ek" onclick="currentSlide(5 , 'six')"></div>
+        <div id="6" class="ek" onclick="currentSlide(6 , 'seven')"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

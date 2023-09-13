@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(2, 2, 2);
+}
+.slideshowContainer {
+  width: 64%;
+  height: 80vh;
+  margin: 8vh 18% 0 18%;
+  /* border: 2px solid red; */
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+.images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* margin: 3% 3% 2% 3%; */
+  transition: 1s;
+}
+
+.button {
+  width: 100%;
+  margin-top: 30%;
+  /* height: 100%; */
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.circle {
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+  /* bottom: 0; */
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.ek {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: grey;
+
+  cursor: pointer;
+}
+.active,
+.ek:hover {
+  background-color: white;
+}
+.x {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+
+@media screen and  (min-width:1545px) and (max-width:2561px) {
+  .button{
+    margin-top: 38vh;
+  }
+  .ek {
+    width: 20px;
+    height: 20px;
+   
+  }
+}
+
+@media screen and  (min-width:1025px) and (max-width:1545px) {
+  .button{
+    margin-top: 36vh;
+  }
+  .x{
+    padding: 8px;
+  }
+}
+
+@media screen and  (min-width:769px) and (max-width:1025px) {
+  .button{
+    margin-top: 35vh;
+  }
+  .x{
+    padding: 6px;
+  }
+}
+
+@media screen and  (min-width:426px) and (max-width:769px) {
+  .button{
+    margin-top: 33vh;
+  }
+ .x{
+  font-size: 25px;
+  padding: 6px;
+ }
+ .slideshowContainer{
+  height: 70vh;
+}
+.slideshowContainer {
+  width: 80%;
+  height: 80vh;
+  margin: 8vh 10% 0 10%;
+}
+}
+
+@media screen and  (min-width:376px) and (max-width:426px) {
+  .slideshowContainer {
+    width: 80%;
+    height: 80vh;
+    margin: 8vh 10% 0 10%;
+  }
+  .x{
+   font-size: 16px;
+  }
+  .button{
+    margin-top: 24vh;
+  }
+  .slideshowContainer{
+    height: 55vh;
+  }
+  .x{
+    padding: 5px;
+  }
+ }
+
+ @media screen and  (min-width:120px) and (max-width:376px) {
+  .slideshowContainer {
+    width: 80%;
+    height: 80vh;
+    margin: 8vh 10% 0 10%;
+  }
+  .x{
+   font-size: 14px;
+  }
+  .button{
+    margin-top: 22vh;
+  }
+  .slideshowContainer{
+    height: 50vh;
+  }
+  .x{
+    padding: 5px;
+  }
+ }
